@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backgroundimageandpicture</title>
+    <style>
+        body {
+            background-color: red;
+            background-repeat: no-repeat;
+            background-size: 50% 100%;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Magnam deserunt placeat mollitia recusandae pariatur soluta repellat ducimus esse nobis dolorum.
+    </p>
+
+
+    <!--The picture Element-->
+    <picture>
+        <source media="(min-width:850px)" srcset="https://images.pexels.com/photos/12011638/pexels-photo-12011638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <source media="(min-width:650px)" srcset="img/friends.png">
+        <source media="(min-width:250px)" srcset="https://images.pexels.com/photos/14935624/pexels-photo-14935624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <img src="https://images.pexels.com/photos/12011638/pexels-photo-12011638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" >
+    </picture>
+</body>
+</html>
