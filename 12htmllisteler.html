@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+    <style>
+        #menu {
+            list-style-type: none; /*noktalardan yada karelerden kurtuldum.*/
+            padding: 0; /*aralarındaki boşluğu sıfırlar.*/
+            margin: 0; /*en tepeye gider*/
+            overflow: hidden; /*blok elemente dönüştürdüm.Kayma olmadı.Ondan sonra gelen değerler altından devam etti.*/
+        }
+        #menu li {
+            padding-left: 15px;
+            float: left; /*Yanyana gelmesi için sola doğru kay komutunu verdim.*/
+        }
+    </style>
+</head>
+<body>
+    <!--Ordered List--> 
+    <ol type="1" start="22">
+        <li>
+            Ali Mert
+        </li>
+        <li>
+            Sümer
+            <ol start="60">
+                <li>cbü</li>
+            </ol>
+        </li>
+        <li>
+            Eray
+        </li>
+    </ol>
+    <ol type="A">
+        <li>
+            Ali Mert
+        </li>
+        <li>
+            Sümer
+        </li>
+        <li>
+            Eray
+        </li>
+    </ol>
+    <ol type="a">
+        <li>
+            Ali Mert
+        </li>
+        <li>
+            Sümer
+        </li>
+        <li>
+            Eray
+        </li>
+    </ol>
+    <ol type="I">
+        <li>
+            Ali Mert
+        </li>
+        <li>
+            Sümer
+        </li>
+        <li>
+            Eray
+        </li>
+    </ol>
+    <ol type="i">
+        <li>
+            Ali Mert
+        </li>
+        <li>
+            Sümer
+        </li>
+        <li>
+            Eray
+        </li>
+    </ol>
+
+
+
+
+
+
+
+
+    <br>
+    <hr>
+    <br>
+
+    <ul id="menu">
+        <li>Anasayfa</li>
+        <li>Hakkımızda</li>
+        <li>İletişim</li>
+    </ul>
+
+    <ul style="list-style-type: disc;">       <!--Unordered list(sıralı olmayan)--> 
+<!--list item--> <li>Ali Mert</li>
+                 <li>Eray</li>
+                 <li>Sümer</li>
+    </ul>
+    <ul style="list-style-type: square;">       
+                 <li>Ali Mert</li>
+                 <li>Eray</li>
+                 <li>Sümer</li>
+    </ul>
+    <ul style="list-style-type: circle;">       
+                <li>Ali Mert</li>
+                <li>Eray</li>
+                <li>Sümer</li>
+    </ul>
+    <ul style="list-style-type: name;">       
+                <li>Ali Mert
+                    <ul style="list-style-type: square;">
+                        <li>yilmaz</li>
+                        <li>yilmaz</li>
+                        <li>yilmaz</li>
+                    </ul>
+                </li>
+                <li>Eray</li>
+                <li>Sümer</li>
+    </ul>
+    <ul style="list-style-type: none;">       
+                <li>Ali Mert</li>
+                <li>Eray</li>
+                <li>Sümer</li>
+    </ul>
+</body>
+</html>
