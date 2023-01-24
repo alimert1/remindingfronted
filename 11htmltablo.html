@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table{
+            /*border-spacing: 10px; /*satırlar arası boşluk vermek için kullanılır fakat yukarıda border collapse kullandığın için collapse komutu bu kodu ezer.*/
+        }
+        caption{
+            font-size: 32px;
+        }
+        table , #tablo1 td , #tablo2 th {
+            border: 1px solid blue; /*hem th hem de td ye border çizdiği için ikili border çizecektir.Bunun önüne geçebilmek için border collapse kullan.*/
+            border-collapse: collapse; /*O border çizgilerini üst üste bindirecektir.Tek çizgi olarak görünecektir.*/
+        }
+        table , #tablo2 td , #tablo2 th {
+            border: 1px solid red; /*hem th hem de td ye border çizdiği için ikili border çizecektir.Bunun önüne geçebilmek için border collapse kullan.*/
+            border-collapse: collapse; /*O border çizgilerini üst üste bindirecektir.Tek çizgi olarak görünecektir.*/
+        }
+        #tablo1 tr:nth-child(even) {
+            background-color: teal;
+        }
+        #tablo1 tr:nth-child(odd) {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <table id="tablo1" style="width: 100%;">
+
+        <caption>Deneme Tablosu</caption> <!--Başlık-->
+
+                <tr>
+               <!--table header-->      <th>
+                                               isim 
+                                        </th>
+                                        <th>
+                                              soyisim
+                                        </th>
+                                        <th>
+                                            yas
+                                        </th>
+                                        <th>
+                                            resim
+                                        </th>
+                                        <th colspan="2"> <!--sütunun birden fazla alan kaplamasını istiyorsan colspan kullan.-->
+                                            adres
+                                        </th>
+                </tr>
+
+
+ <!--table row--><tr>
+<!--table data-->       <td>
+                        Ali Mert
+                        </td>
+                        <td>
+                            yilmaz
+                        </td>
+                        <td>
+                            22
+                        </td>
+                        <td>
+                            <img src="img/friends.png" alt="" style="width: 50px; height: 50px;">
+                        </td>
+                        <td>
+                            izmir
+                        </td>
+                        <td>
+                            aydin
+                        </td>
+                </tr>           
+    </table>
+
+    <br><br>
+
+    <table id="tablo2" style="width: 100%;">
+        <caption>İsimler numaralar tablosu</caption>
+        <tr>
+            <th>Ad:</th>
+            <td>Ali Mert Yimaz</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Telefon:</th>
+            <td>123456</td>
+        </tr>
+        <tr>
+            <td>98765</td>
+        </tr>
+        <tr>
+            <td>212121212</td>
+        </tr>
+    </table>
+</body>
+</html>
